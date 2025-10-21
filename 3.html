@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional2 com conectivos</title>
+</head>
+
+<body>
+    <h1>Boletim do Aluno</h1>
+    <hr>
+    <form action="">
+        nota1: <br>
+        <input type="number" id="n1"> <br>
+        nota2: <br>
+        <input type="number" id="n2"> <br>
+        nota3: <br>
+        <input type="number" id="n3"> <br>
+        nota4: <br>
+        <input type="number" id="n4"> <br>
+        <br>
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+    <div id="resposta"></div>
+
+    <script>
+        function calcular() {
+            /*pagando os dados da tela*/
+            let n1j = parseFloat(document.getElementById("n1").value);
+            let n2j = parseFloat(document.getElementById("n2").value);
+            let n3j = parseFloat(document.getElementById("n3").value);
+            let n4j = parseFloat(document.getElementById("n4").value);
+            //calcular a média
+            var md = (n1j + n2j + n3j + n4j) / 4;
+            var msg = '';
+
+            if (md >= 7) {
+                msg = "aprovado";
+            }
+            if (md >= 5 && md < 7) {
+                msg = "recuperação";
+            }
+            if (md < 5) {
+                msg = "reprovado";
+            }
+            //impressão na tela
+            document.getElementById("resposta").innerHTML = "situação : " + msg + "<br/>" + "media : " + md;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- Criar um programa em javascript que leia quatro notas de um aluno e depois imprima
+ a media aritmetia das notas e a situação do aluno, a partir dos seguintes criterios
+ media < 5 reprovado
+ media entre 5 e 6.9 recuperação,
+ media > = 7 aprovado-->

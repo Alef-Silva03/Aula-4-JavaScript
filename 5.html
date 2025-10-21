@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional4</title>
+</head>
+
+<body>
+    <h1>Grau de Obesidade</h1>
+    <hr>
+    <form action="">
+        peso (kg): <br>
+        <input type="number" id="peso"> <br>
+        altura (m): <br>
+        <input type="number" id="altura"> <br>
+        <br>
+        <button type="button" onclick="calcular()">calcular</button>
+    </form>
+    <div id="resposta"></div>
+
+    <script>
+        function calcular() {
+            let peso = parseFloat(document.getElementById("peso").value);
+            let altura = parseFloat(document.getElementById("altura").value);
+            let imc = peso / (altura **2);
+            let classificacao = '';
+            if (imc < 18.5) {
+                classificacao = "magreza";
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                classificacao = "normal";
+            } else if (imc >= 25 && imc <= 29.9) {
+                classificacao = "sobrepeso";
+            } else if (imc >= 30 && imc <= 34.9) {
+                classificacao = "obesidade grau I";
+            } else if (imc >= 35 && imc <= 39.9) {
+                classificacao = "obesidade grau II";
+            } else {
+                classificacao = "obesidade grau III";
+            }
+            document.getElementById("resposta").innerHTML = "seu IMC é : " + imc.toFixed(2) + "<br/>" + "classicação : " + classificacao;
+        }
+        
+        
+
+
+    </script>
+</body>
+
+</html>
+<!--solicite ao usuario, o peso e altura, e calcule o seu IMC dizendo
+IMC = peso / (altura x altura)
+
+IMC 	Classificação
+Menor que 18,5 	Magreza
+18,5 a 24,9 		Normal
+25 a 29,9 		Sobrepeso
+30 a 34,9 		Obesidade grau I
+35 a 39,9 		Obesidade grau II
+Maior que 40 	Obesidade grau III-->
