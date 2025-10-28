@@ -8,3 +8,4 @@ https://www.w3schools.com/js/js_comparisons.asp
 4. Ctrl + Alt + Seta pra baixo: (Consegue mudar tudo em bloco).
 5. Ctrl + Barra de espaço: Puxa a origem do meu script.
 6. Ctrl + Botão esquerdo do mouse: verifica se esta puxando certo o arquivo.
+7. Ctrl + Z : Volta o script | Ctrl + Y : Refaz oq você volto.
