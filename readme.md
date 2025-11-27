@@ -9,3 +9,4 @@ https://www.w3schools.com/js/js_comparisons.asp
 5. Ctrl + Barra de espaço: Puxa a origem do meu script.
 6. Ctrl + Botão esquerdo do mouse: verifica se esta puxando certo o arquivo.
 7. Ctrl + Z : Volta o script | Ctrl + Y : Refaz oq você volto.
+8. li * o numero de vezes que vc quer.
