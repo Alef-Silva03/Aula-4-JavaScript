@@ -10,3 +10,4 @@ https://www.w3schools.com/js/js_comparisons.asp
 6. Ctrl + Botão esquerdo do mouse: verifica se esta puxando certo o arquivo.
 7. Ctrl + Z : Volta o script | Ctrl + Y : Refaz oq você volto.
 8. li * o numero de vezes que vc quer.
+9. Ctrl + : transforma em comentario.
